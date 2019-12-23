@@ -1,9 +1,9 @@
 <template>
-	<view class="content">
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+  <view class="content">
+    <view>
+      <text class="title">{{title}}</text>
+    </view>
+  </view>
 </template>
 
 <script>
@@ -13,12 +13,12 @@ export default {
       title: "wow xuan"
     };
   },
-  onLoad() {},
+  onLoad() { },
   methods: {}
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .content {
   text-align: center;
   height: 400upx;
