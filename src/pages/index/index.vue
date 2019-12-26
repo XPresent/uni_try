@@ -2,6 +2,7 @@
   <view class="content">
     <view>
       <text class="title">{{title}}</text>
+      <view class="duanzi">{{duanzi}}</view>
     </view>
   </view>
 </template>
@@ -10,10 +11,10 @@
 export default {
   data() {
     return {
-      title: "wow xuan"
+      title: "",
+      duanzi: ''
     };
   },
-  onLoad() { },
   methods: {}
 };
 </script>
@@ -21,10 +22,12 @@ export default {
 <style lang="scss" scoped>
 .content {
   text-align: center;
-  height: 400upx;
+  height: 400rpx;
 }
 .title {
-  font-size: 36upx;
+  font-size: 16px;
   color: #8f8f94;
+}
+.change {
 }
 </style>

@@ -12,10 +12,10 @@ function resolve(dir) {
 
 function getGlobalDefine() {
   const gitRevisionPlugin = new GitRevisionPlugin()
-  const globalConfig = { pathname: appPath }
+  const globalConfig = { PATHNAME: appPath }
   const config = {
     VERSION: JSON.stringify(require('./package.json').version),
-    COMMITHASH: JSON.stringify(`${moment().format('YYYYMMDD')}(${gitRevisionPlugin.commithash().slice(0, 8)})`)
+    COMMIT_HASH: JSON.stringify(`${moment().format('YYYYMMDD')}(${gitRevisionPlugin.commithash().slice(0, 8)})`)
   }
   Object.keys(globalConfig).forEach(k => { config[k] = `"${globalConfig[k]}"` })
   return config
@@ -27,8 +27,8 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 const isDevelopment = process.env.NODE_ENV === 'development'
 
 const backEndServer = 'http://cim.rd.mt'
-const appPath = argv.path || '/admin/'
-const proxyTable = keyBy(['init'].map(sub => {
+const appPath = argv.path || '/adm_api/'
+const proxyTable = keyBy(['s', 'f'].map(sub => {
   return {
     key: appPath + sub,
     target: backEndServer,
