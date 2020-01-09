@@ -1,7 +1,7 @@
 import config from '@/config'
 import { handleRequest, handleResponse } from './interceptor'
 
-const baseUrl = config.pathname + 's/json'
+const baseUrl = config.pathname + 'x/'
 
 const headers = {
   'Accept': 'text/x-json',
@@ -16,7 +16,7 @@ class Request {
 
   ajax(url, config = {}) {
     const params = {
-      url: baseUrl + `?func=${url}`,
+      url: baseUrl + url,
       header: headers,
       ...config
     }

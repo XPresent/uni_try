@@ -3,7 +3,7 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "主页"
+				"navigationBarTitleText": "little fun"
 			}
 		},
 		{
@@ -13,27 +13,27 @@
 			}
 		}
 	],
-	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#3cc51f",
-		"borderStyle": "black",
-		"backgroundColor": "#000",
-		"list": [
-			{
-				"pagePath": "pages/index/index",
-				"iconPath": "static/images/index.png",
-				"selectedIconPath": "static/images/index_select.png"
-			},
-			{
-				"pagePath": "pages/own/index",
-				"iconPath": "static/images/own.png",
-				"selectedIconPath": "static/images/own_select.png"
-			}
-		]
-	},
+	// "tabBar": {
+	// 	"color": "#7A7E83",
+	// 	"selectedColor": "#3cc51f",
+	// 	"borderStyle": "black",
+	// 	"backgroundColor": "#000",
+	// 	"list": [
+	// 		{
+	// 			"pagePath": "pages/index/index",
+	// 			"iconPath": "static/images/index.png",
+	// 			"selectedIconPath": "static/images/index_select.png"
+	// 		},
+	// 		{
+	// 			"pagePath": "pages/own/index",
+	// 			"iconPath": "static/images/own.png",
+	// 			"selectedIconPath": "static/images/own_select.png"
+	// 		}
+	// 	]
+	// },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "xuan",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#000"
 	}

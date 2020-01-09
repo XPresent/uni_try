@@ -26,9 +26,9 @@ const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 const isDevelopment = process.env.NODE_ENV === 'development'
 
-const backEndServer = 'http://cim.rd.mt'
-const appPath = argv.path || '/adm_api/'
-const proxyTable = keyBy(['s', 'f'].map(sub => {
+const backEndServer = 'http://local.rd.mt:8000'
+const appPath = argv.path || '/uni_api/'
+const proxyTable = keyBy(['x'].map(sub => {
   return {
     key: appPath + sub,
     target: backEndServer,
@@ -50,7 +50,7 @@ module.exports = {
         { from: /.*/, to: path.posix.join('/public/', 'index.html') },
       ],
     },
-    host: HOST || 'local.rd.mt',
+    host: HOST || '127.0.0.1',
     hot: true,
     port: PORT || 3000,
     open: false,

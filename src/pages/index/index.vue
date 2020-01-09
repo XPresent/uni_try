@@ -1,9 +1,8 @@
 <template>
   <view class="content">
-    <view>
-      <text class="title">{{title}}</text>
-      <view class="duanzi">{{duanzi}}</view>
-    </view>
+    <view class="duanzi">{{duanzi}}</view>
+    <a class="title"
+          @click="getInterestingWords">{{title}}</a>
   </view>
 </template>
 
@@ -11,23 +10,34 @@
 export default {
   data() {
     return {
-      title: "",
+      title: "换一个",
       duanzi: ''
     };
   },
-  methods: {}
+  mounted() {
+    this.getInterestingWords()
+  },
+  methods: {
+    getInterestingWords() {
+      this.$xhr.post('getInterestingWords').then(res => {
+        const data = res.var
+        this.duanzi = data.duanzi[0].content
+      })
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
 .content {
   text-align: center;
-  height: 400rpx;
 }
 .title {
   font-size: 16px;
   color: #8f8f94;
 }
-.change {
+.duanzi{
+  min-height: 400rpx;
+  padding: 80rpx 0; 
 }
 </style>
