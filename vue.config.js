@@ -26,7 +26,7 @@ const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 const isDevelopment = process.env.NODE_ENV === 'development'
 
-const backEndServer = 'http://local.rd.mt:8000'
+const backEndServer = 'http://xuan7.top'
 const appPath = argv.path || '/uni_api/'
 const proxyTable = keyBy(['x'].map(sub => {
   return {

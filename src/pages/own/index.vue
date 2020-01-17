@@ -1,5 +1,5 @@
 <template>
-  <view class="duan-zi">
+  <view>
   </view>
 </template>
 <script>
@@ -11,3 +11,4 @@ export default {};
   height: 100%;
 }
 </style>
+

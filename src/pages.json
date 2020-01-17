@@ -3,13 +3,25 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "little fun"
+				"navigationBarTitleText": "Sunny Data"
 			}
 		},
 		{
 			"path": "pages/own/index",
 			"style": {
-				"navigationBarTitleText": "我的"
+				"navigationBarTitleText": "Me"
+			}
+		},
+		{
+			"path": "pages/calculate/netValue",
+			"style": {
+				"navigationBarTitleText": "资产净值"
+			}
+		},
+		{
+			"path": "pages/fun/interest",
+			"style": {
+				"navigationBarTitleText": "段子"
 			}
 		}
 	],
@@ -33,7 +45,7 @@
 	// },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "xuan",
+		"navigationBarTitleText": "Sunny Data",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#000"
 	}
