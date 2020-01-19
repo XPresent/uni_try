@@ -1,10 +1,9 @@
 <template>
   <view class="net-value">
     <view class="panel">
-      <view class="panel-header">计算资产增长率</view>
+      <view class="panel-header">资产增长率</view>
       <view class="panel-container">
-        <form @submit="formSubmit"
-              @reset="formReset">
+        <form @submit="growFormSubmit">
           <view class="uni-form-item">
             <view class="form-title">各资产占比：</view>
             <textarea class="fund-textarea"
@@ -78,7 +77,7 @@ export default {
       const reg = /^[0-9.]+$/
       return list.some(item => reg.test(item))
     },
-    formSubmit() {
+    growFormSubmit() {
       this.finish = false
       this.countResult = 0
       this.proportionList = []
@@ -116,9 +115,6 @@ export default {
       }
       this.finish = true
     },
-    formReset() {
-
-    }
   }
 
 }

@@ -19,6 +19,12 @@
 			}
 		},
 		{
+			"path": "pages/calculate/rightPrice",
+			"style": {
+				"navigationBarTitleText": "资产估值"
+			}
+		},
+		{
 			"path": "pages/fun/interest",
 			"style": {
 				"navigationBarTitleText": "段子"

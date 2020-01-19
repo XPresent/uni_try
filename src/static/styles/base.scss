@@ -11,6 +11,11 @@ uni-page-body {
   border-radius: 10rpx;
   padding: 30rpx 20rpx;
   color: #4a4a4a;
+  margin-top: 40rpx;
+
+  &:first-child {
+    margin-top: 0;
+  }
 
   .panel-header {
     font-size: 14px;

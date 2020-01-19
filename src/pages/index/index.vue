@@ -35,15 +35,15 @@
     &:not(:first-child) {
       margin-top: 40rpx;
     }
-    .mennu-box-title {
-      padding-bottom: 25rpx;
+    .menu-box-title {
+      padding-bottom: 10rpx;
     }
     .menu-box-item-label {
       text-align: right;
       padding: 20rpx 60rpx 20rpx 30rpx;
     }
     .menu-box-item {
-      margin-top: 20rpx;
+      margin-top: 30rpx;
       &:nth-child(1) {
         background: #ccddf2;
       }
@@ -74,12 +74,12 @@ export default {
           title: '精选数据',
           content: [
             {
-              label: '计算器',
+              label: '计算资产净值',
               link: '/pages/calculate/netValue'
             },
             {
-              label: '新能源',
-              link: '/pages/newEnergy/index'
+              label: '计算资产合理价格',
+              link: '/pages/calculate/rightPrice'
             },
             {
               label: '段子',
