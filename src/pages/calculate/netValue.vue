@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     isNumberStr(list) {
-      const reg = /^[0-9.]+$/
+      const reg = /^(\-|\+)?\d+(\.\d+)?$/
       return list.some(item => reg.test(item))
     },
     growFormSubmit() {
